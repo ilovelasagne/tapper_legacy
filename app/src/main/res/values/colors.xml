@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme -->
+    <color name="dark_background">#000000</color>
+    <color name="dark_text">#FFFFFF</color>
+    <color name="dark_accent">#FF4444</color>
+    
+    <!-- Light Theme -->
+    <color name="light_background">#F5F5F5</color>
+    <color name="light_text">#333333</color>
+    <color name="light_accent">#D32F2F</color>
+    
+    <!-- Blue Theme -->
+    <color name="blue_background">#0D1421</color>
+    <color name="blue_text">#64B5F6</color>
+    <color name="blue_accent">#1976D2</color>
+    
+    <!-- Visual Indicator -->
+    <color name="indicator_green">#4CAF50</color>
+    
+    <!-- Common -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

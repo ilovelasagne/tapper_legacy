@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:theme="@style/Theme.Tapper.NoActionBar"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/menuScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="START"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/optionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="OPTIONS"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/highScoreDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/highScoreMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="on EASY"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/optionsScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/difficultyLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/currentMode"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="EASY"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/difficultyRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/difficultyDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Changes speed and difficulty of game."
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/buzzLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/currentBuzz"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="NORMAL"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/buzzRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/buzzDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adjusts vibration intensity."
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/soundLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/currentSound"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/soundRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/soundDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toggles sound effects."
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/themeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&lt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/currentTheme"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="DARK"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/themeRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="&gt;"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/themeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Changes the app's color scheme."
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="BACK"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/gameScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/scoreNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/gameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GAME OVER"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/visualIndicator"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

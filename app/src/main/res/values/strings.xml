@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tapper</string>
+    <string name="start_game">START</string>
+    <string name="options">OPTIONS</string>
+    <string name="back">BACK</string>
+    <string name="game_over">GAME OVER\ntap to restart</string>
+    <string name="best_score">Best: %d</string>
+    <string name="difficulty_easy">EASY</string>
+    <string name="difficulty_medium">MEDIUM</string>
+    <string name="difficulty_hard">HARD</string>
+    <string name="buzz_off">OFF</string>
+    <string name="buzz_normal">NORMAL</string>
+    <string name="buzz_strong">STRONG</string>
+    <string name="sound_on">ON</string>
+    <string name="sound_off">OFF</string>
+    <string name="theme_dark">DARK</string>
+    <string name="theme_light">LIGHT</string>
+    <string name="theme_blue">BLUE</string>
+    <string name="buzz_off_description">When OFF, shows green dot for double-tap cues</string>
+    <string name="created_by">Created by Christian &amp; Nathan</string>
+</resources>
